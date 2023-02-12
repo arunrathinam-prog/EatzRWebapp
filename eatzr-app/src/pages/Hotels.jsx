@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../data/data.json'
+import '../App.css'
 import RestaurantCard from '../components/RestaurantCard'
 class Hotels extends React.Component {
     constructor() {
@@ -57,7 +58,7 @@ class Hotels extends React.Component {
                             Good
                         </p>
                         <div>
-                        <center>
+                        <center className="text-gray-500 text-lg">
                         <label for="cars">Please Select a station for Order Deliver </label>
                         <select id="station" name="station" className='rounded' >
                             <option value="Wardha">Wardha</option>

@@ -17,10 +17,10 @@ class RestaurantCard extends React.Component{
                     <center><img src={this.props.thumbnail_image} alt={this.props.name}/></center>
                 </Link>
                 <center>
-                    <h3 id="hotel-title">{this.props.name}</h3>
-                    <p>{this.props.cuisines}</p>
-                    <p>Rating: {'★'.repeat(this.props.rating)}</p>
-                    <p>Reviews: {this.props.reviews}</p>
+                    <h3 className="text-gray-500 text-lg" id="hotel-title">{this.props.name}</h3>
+                    <p className="text-gray-500 text-lg">{this.props.cuisines}</p> 
+                    <p className="text-gray-500 text-lg">Rating: {'★'.repeat(this.props.rating)}</p>
+                    <p className="text-gray-500 text-lg">Reviews: {this.props.reviews}</p>
                     </center>
             </div>
         );

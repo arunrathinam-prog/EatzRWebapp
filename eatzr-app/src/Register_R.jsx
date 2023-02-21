@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Routes, Route, useNavigate,Link} from 'react-router-dom';
+import "./App_Login.css";
 
 export const Register_R = (props) => {
     const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ export const Register_R = (props) => {
     }
 
     return (
-        <div className="auth-form-container">
+        <div className="App1 auth-form-container">
             <>
             <img src= "/favicon.ico" alt= "Food" height={50} width={50}  />
 

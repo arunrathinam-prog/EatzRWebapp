@@ -6,6 +6,7 @@ import MyCart from '../components/MyCart'
 import Popup from 'reactjs-popup';
 import {Link} from 'react-router-dom'
 import 'reactjs-popup/dist/index.css';
+import '../App.css'
 
 class Orders extends React.Component {
     constructor() {
@@ -23,7 +24,7 @@ class Orders extends React.Component {
     }
 
     componentWillMount() {
-        const hotel = this.props.history.location.pathname.slice(7)
+        const hotel = 'Radhika'
         const List = this.state.list.filter(function (rec) { return rec.name === hotel })
         this.setState({
             id: hotel,
@@ -76,7 +77,7 @@ class Orders extends React.Component {
 
     render() {
         return (
-            <div className='m-10'>
+            <div className='App m-10'>
                 <div id="content">
                     <div id="head">
                         <h1 className='hname'>{this.state.newList.map(x => x.name)}</h1>
@@ -103,7 +104,7 @@ class Orders extends React.Component {
                         </div>
                         <div id="right">
                             <div id="right-in">
-                                <h4>My Cart</h4>
+                                <h4 className='text-gray-500 text-lg'>My Cart</h4>
 
                                 {this.state.clickable &&
                                     <div>
@@ -117,9 +118,9 @@ class Orders extends React.Component {
                                     </div>
                                 }
 
-                                <div id="total">
-                                    <p id="total"> Total amount:
-                                        <span className="spn">{'\u20B9'}  {this.state.total}</span>
+                                <div id=" text-gray-500 text-lg">
+                                    <p id=" text-gray-500 text-lg"> Total amount:
+                                        <span className=" text-gray-500 text-lg">{'\u20B9'}  {this.state.total}</span>
                                     </p>
                                     <input id="pay" type="button" value="Calculate"
                                         onClick={() => this.total(this.state.price, this.state.quantity)} />
@@ -136,7 +137,7 @@ class Orders extends React.Component {
                                                     </div>
                                                     <div>
                                                         <Link to={{
-                                                            pathname: `/`
+                                                            pathname: `/hotel`
                                                         }}>
                                                          <input id="pay" onClick=
                                                             {() => close()} type="button" value="Pay Now" />

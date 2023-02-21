@@ -1,6 +1,8 @@
 import React from 'react';
 import data from '../data/data.json'
 import '../App.css'
+import eatzRLogo from '../data/eatzr1.png';
+import headerLogo from '../data/eatzr2.png';
 import RestaurantCard from '../components/RestaurantCard'
 class Hotels extends React.Component {
     constructor() {
@@ -44,32 +46,39 @@ class Hotels extends React.Component {
             document.querySelector('.output').textContent = output;
         }
     }
-    
+
 
     render() {
         return (
-            <div className='flex flex-col' onclick="getOption()">
+            <div className='flex flex-col bg-white' onclick="getOption()">
                 <div>
                     <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
-                        <p className="text-3xl text-gray-700 font-bold mb-5">
-                            Welcome Arun !
-                        </p>
-                        <p className="text-gray-500 text-lg">
-                            Good
-                        </p>
+                        <div className="row">
+                            <div className="column1">
+                                <div className="topnav">
+                                    <a href="www.eatzR.com" className='m-10 text-gray-500 text-lg'>Home</a>
+                                    <a href="/main/login.html" className='m-10 text-gray-500 text-lg'>Account</a>
+                                    <a href="/main/download.html" className='m-10 text-gray-500 text-lg'>Download</a>
+                                    <a href="/main/download.html" className='m-10 text-gray-500 text-lg'>Log Out</a>
+                                </div>
+                            </div>
+                            <div className="column2 text-gray-500 text-lg mt-5">
+                                <div><p>Why stay hungry when you can get food right at your seat?!</p><p>Welcome to EatzR!</p></div>
+                            </div>
+                        </div>
                         <div>
-                        <center className="text-gray-500 text-lg">
-                        <label for="cars">Please Select a station for Order Deliver </label>
-                        <select id="station" name="station" className='rounded' >
-                            <option value="Wardha">Wardha</option>
-                            <option value="Nagpur">Nagpur</option>
-                            <option value="Akola">Akola</option>
-                            <option value="Pune">Pune</option>
-                        </select>
-                        </center>
+                            <center className="text-gray-500 text-lg">
+                                <label for="cars">Please Select a station for Order Deliver </label>
+                                <select id="station" name="station" className='rounded' >
+                                    <option value="Wardha">Wardha</option>
+                                    <option value="Nagpur">Nagpur</option>
+                                    <option value="Akola">Akola</option>
+                                    <option value="Pune">Pune</option>
+                                </select>
+                            </center>
+                        </div>
                     </div>
-                    </div>
-                   
+
                     <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
                         <div className="grid grid-cols-3 m-5">
                             {this.state.list.map(

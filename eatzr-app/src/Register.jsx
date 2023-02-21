@@ -57,7 +57,7 @@ export const Register = (props) => {
 
 
     return (
-        <div className="auth-form-container">
+        <div className="App1 auth-form-container">
             <img src= "/favicon.ico" alt= "Food" height={50} width={50}  />
             <h2>Welcome to EatzR</h2>
             <img src= "/Food1.jpg" alt= "Food" height={250} width={300}  />

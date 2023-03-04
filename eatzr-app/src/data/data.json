@@ -2,6 +2,7 @@
     {
         "id": "66330",
         "name": "Radhika",
+        "name1": "Radhika",
         "address": "Shivaji Chowk Wardha",
         "city": "Wardha",
         "cuisines": "Mithai, Street Food, North Indian",
@@ -14,7 +15,7 @@
                 "id": 1,
                 "name": "Royal Chicken Biryani",
                 "desc": "An Authentic Hyderabadi Biryani where succulent Chicken piece is marinated with a blend of spices, layered with the finest Basmati Rice and Dum Cooked with generous portions of Saffron and Ghee.",
-                "price": 210
+                "price": 280
             },
             {
                 "id": 2,
@@ -26,37 +27,38 @@
                 "id": 3,
                 "name": "Egg Biryani",
                 "desc": "A flavorful medley of finest Basmati Rice, boiled Eggs, and aromatic spices. Ideally for one person but can be shared between two. ",
-                "price": 230
+                "price": 280
             },
             {
                 "id": 4,
                 "name": "Supreme Veg Biryani",
                 "desc": "The authentic Veg delicacy seasoned with herbs and spices and then layered into fine grain Basmati Rice and cooked to perfection.",
-                "price": 190
+                "price": 280
             },
             {
                 "id": 5,
                 "name": "Chicken Kebab Platter",
                 "desc": "An assorted variety of Moroccan Chicken Kebab, Chicken Pepper Marinate, Chicken Reshmi Kebab & Chicken Garlic Kebab served with Pudina chutney. Comes in a tamper-proof sealed pack, easy to carry. (8 pcs)",
-                "price": 240
+                "price": 280
             },
             {
                 "id": 6,
                 "name": "Tandoori Chicken (Half)",
                 "desc": "The King of all kebabs, spiced full Chicken with bone, finished in a Tandoor. (2 pcs)",
-                "price": 370
+                "price": 280
             },
             {
                 "id": 7,
                 "name": "Qubani Ka Meetha",
                 "desc": "A sweet treat from Hyderabad, this heavenly dessert comprises of dried apricots and sugar, enriched with saffron strands and rose water.",
-                "price": 150
+                "price": 280
             }
         ]
     },
     {
         "id": "71679",
-        "name": "National Lodge",
+        "name": "NationalLodge",
+        "name1": "National Lodge",
         "address": "Gandhi Nagar, Nagpur",
         "city":"Nagpur",
         "cuisines": "Andhra, South Indian",
@@ -111,7 +113,8 @@
     },
     {
         "id": "68329",
-        "name": "Hotel Krishna Prasad",
+        "name": "HotelKrishnaPrasad",
+        "name1": "Hotel Krishna Prasad",
         "address": "Krishna Nagar , Akola",
         "city":"Akola",
         "cuisines": "South Indian",
@@ -166,7 +169,8 @@
     },
     {
         "id": "67408",
-        "name": "Board Walk",
+        "name": "BoardWalk",
+        "name1": "Board Walk",
         "address": "ABC Pune",
         "city": "Pune",
         "cuisines": "North Indian, Continental",
@@ -221,7 +225,8 @@
     },
     {
         "id": "66334",
-        "name": "Vahuman Cafe",
+        "name": "VahumanCafe",
+        "name1": "Vahuman Cafe",
         "address": "DP Road Pune",
         "city": "Pune",
         "cuisines": "North Indian, South Indian, Street Food, Fast Food",
@@ -276,7 +281,8 @@
     },
     {
         "id": "66312",
-        "name": "Supreme Hotel",
+        "name": "SupremeHotel",
+        "name1": "Supreme Hotel",
         "address": "ABC Pune",
         "city": "Pune",
         "cuisines": "Andhra, Chinese, Street Food",
@@ -331,7 +337,8 @@
     },
     {
         "id": "66342",
-        "name": "West In",
+        "name": "WestIn",
+        "name1": "West In",
         "address": "KP Pune",
         "city": "Pune",
         "cuisines": "French, Continental",
@@ -386,7 +393,8 @@
     },
     {
         "id": "65505",
-        "name": "Gulshan Hotel",
+        "name": "GulshanHotel",
+        "name1": "Gulshan Hotel",
         "address": "Sneha Nagar Nagpur",
         "city":"Pune",
         "cuisines": "South Indian, North Indian, Street Food, Ice Cream, Beverages, Desserts",
@@ -496,7 +504,8 @@
     },
     {
         "id": "18947325",
-        "name": "AB's - Absolute Barbecues",
+        "name": "AbsoluteBarbecues",
+        "name1": "AB's - Absolute Barbecues",
         "address": "Shivaji Nagar Daund",
         "city": "Daund",
         "cuisines": "BBQ, North Indian, European",
@@ -551,7 +560,8 @@
     },
     {
         "id": "18681599",
-        "name": "Writer's Cafe",
+        "name": "WriterCafe",
+        "name1": "Writer's Cafe",
         "address": "Modern Colony, SambhajiNagar",
         "city": "SambhajiNagar",
         "cuisines": "Cafe, American, Italian, Beverages",
@@ -606,7 +616,8 @@
     },
     {
         "id": "18643732",
-        "name": "Midnight Madness",
+        "name": "MidnightMadness",
+        "name1": "Midnight Madness",
         "address": "SBI COLONY , Thane",
         "city": "Thane",
         "cuisines": "Italian, Chinese, Continental, Beverages",
@@ -661,7 +672,8 @@
     },
     {
         "id": "18470430",
-        "name": "Paradise Biryani",
+        "name": "ParadiseBiryani",
+        "name1": "Paradise Biryani",
         "address": "Kalyani Nagar , Gondia",
         "city": "Gondia",
         "cuisines": "Biryani, North Indian",
@@ -716,7 +728,8 @@
     },
     {
         "id": "18535029",
-        "name": "Yaki BBQ",
+        "name": "YakiBBQ",
+        "name1": "Yaki BBQ",
         "address": "32, Ramalingam Nagar, Old Mahabalipuram Road,Satara",
         "city": "Satara",
         "cuisines": "Biryani, North Indian, BBQ, South Indian",
@@ -771,7 +784,8 @@
     },
     {
         "id": "18567908",
-        "name": "Rehoboth Biriyani and Kebabs",
+        "name": "RehobothBiriyaniandKebabs",
+        "name1": "Rehoboth Biriyani and Kebabs",
         "address": "55/60, Advent Church Complex,Kolaba,Mumbai",
         "city": "Mumbai",
         "cuisines": "Biryani, North Indian, Chinese",
@@ -826,7 +840,8 @@
     },
     {
         "id": "65071",
-        "name": "Bharani Veg",
+        "name": "BharaniVeg",
+        "name1": "Bharani Veg",
         "address": "51, LB Road, Manmad",
         "city": "Manmad",
         "cuisines": "North Indian, South Indian",

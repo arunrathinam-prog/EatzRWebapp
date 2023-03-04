@@ -24,8 +24,9 @@ class Orders extends React.Component {
     }
 
     componentWillMount() {
-        const hotel = 'Radhika'
-        const List = this.state.list.filter(function (rec) { return rec.name === hotel })
+        const hotel = window.location.href
+        let result = hotel.slice(28,);
+        const List = this.state.list.filter(function (rec) { return rec.name === result })
         this.setState({
             id: hotel,
             newList: List
@@ -69,7 +70,7 @@ class Orders extends React.Component {
     total = (p, q) => {
         this.setState(
             {
-                total: p * q
+                total: p * this.state.name.length
             }
         )
     }
@@ -77,10 +78,10 @@ class Orders extends React.Component {
 
     render() {
         return (
-            <div className='App m-10'>
+            <div className='w-full h-full m-10 bg-white'>
                 <div id="content">
                     <div id="head">
-                        <h1 className='hname'>{this.state.newList.map(x => x.name)}</h1>
+                        <h1 className='hname'>{this.state.newList.map(x => x.name1)}</h1>
                         <h5 className='aname'><i class="fa fa-map-marker" style={{ fontSize: 18 }}></i> {this.state.newList.map(x => x.address)}</h5>
                         <div id='items'>
                             <center><h2>Order Now</h2></center>
@@ -137,7 +138,7 @@ class Orders extends React.Component {
                                                     </div>
                                                     <div>
                                                         <Link to={{
-                                                            pathname: `/hotel`
+                                                            pathname: `/hotels`
                                                         }}>
                                                          <input id="pay" onClick=
                                                             {() => close()} type="button" value="Pay Now" />

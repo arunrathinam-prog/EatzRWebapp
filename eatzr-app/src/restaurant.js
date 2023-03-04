@@ -1,5 +1,5 @@
-import './App.css';
-import './index.css';
+
+import './restaurant.css'
 import eatzRLogo from './data/eatzr1.png';
 import headerLogo from './data/eatzr2.png';
 import React from 'react';
@@ -222,7 +222,7 @@ const ORDERSUMMARY = [
 
 export default function Restaurant() {
   return (
-    <><div className="row">
+    <><div className = 'm-20'><div className="row bg-white w-full flex-column">
       <div className="column1">
         <div className="topnav">
           <a href="www.eatzR.com">Home</a>
@@ -234,14 +234,16 @@ export default function Restaurant() {
         <div><p>Why stay hungry when you can get food right at your seat?!</p><p>Welcome to EatzR!</p></div>
       </div>
       <div className="column2">
-        <img src={eatzRLogo} className="App-logo" alt="logo"></img>
+        {/* <img src={eatzRLogo} className="App-logo" alt="logo"></img> */}
       </div>
       <div className="column3">
         <img src={headerLogo} className="App-logo1" alt="logo1"></img>
       </div>
     </div>
+    <div>
     <Summary OrderSummary={ORDERSUMMARY}/>
-    <Dashboard Orders={ORDERS} Menu={MENU}/>
-    <div id="View_section" ></div></>
+    <Dashboard Orders={ORDERS} Menu={MENU}/></div>
+    <div id="View_section" ></div>
+    </div></>
     )
   }

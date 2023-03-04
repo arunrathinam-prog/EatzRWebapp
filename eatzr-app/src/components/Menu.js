@@ -5,7 +5,8 @@ class Menu extends React.Component{
     constructor(){
         super();
         this.state = {
-            price: '',
+            orders:[],
+            price: [],
             quantity:0
         }
     }
@@ -18,7 +19,7 @@ class Menu extends React.Component{
                 </h3>
                     <div className='desc'>
                         <p>{this.props.desc}</p>
-                        <button className="btn" value={this.props.price} onClick={()=>this.props.action(this.props.price,this.props.name,this.state.quantity)}>Add</button>
+                        <button className="btn" value={this.props.price} onClick={()=>this.props.action(this.props.price,this.props.name,this.state.quantity) && this.props.name.push(this.props.price,this.props.name,this.state.quantity)}>Add</button>
                     </div>
                     <br/> 	
                     <p className='amount'>{'\u20B9'}  {this.props.price} </p>
